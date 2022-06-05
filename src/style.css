@@ -1,0 +1,85 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  z-index: -2;
+}
+
+.card {
+  position: absolute;
+  margin-top: 8vw;
+  margin-left: 40vw;
+  width: 20vw;
+  height: 30vw;
+  border-radius: 1vw;
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+  text-align: center;
+  font: 10vw/30vw Georgia, Times New Roman, serif;
+}
+
+.suitdiamonds:before,
+.suitdiamonds:after {
+  content: "♦";
+  color: #ff0000;
+}
+
+.suithearts:before,
+.suithearts:after {
+  content: "♥";
+  color: #ff0000;
+}
+
+.suitclubs:before,
+.suitclubs:after {
+  content: "♣";
+  color: #000;
+}
+
+.suitspades:before,
+.suitspades:after {
+  content: "♠";
+  color: #000;
+}
+
+div[class*="suit"]:before {
+  position: absolute;
+  font-size: 6vw;
+  left: 2vw;
+  top: -2vw;
+}
+
+div[class*="suit"]:after {
+  position: absolute;
+  font-size: 6vw;
+  right: 2vw;
+  bottom: -2vw;
+}
+
+.button {
+  margin-top: 40vw;
+}
+
+.hand:before,
+.hand:after {
+  content: "";
+  display: table;
+}
+
+.hand:after {
+  clear: both;
+}
+
+.hand {
+  zoom: 1;
+}
